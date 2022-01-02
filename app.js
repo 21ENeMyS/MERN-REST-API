@@ -1,17 +1,17 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const cors = require('cors');
+const cors = require("cors");
 // memanggil routes di folder routes
-const router = require('./app/routes/todo.routes');
-const port = 8000;
+const router = require("./app/routes/todo.routes");
+const port = 3001;
 
 // koneksi database
-require('../api/config/db');
+require("../api/config/db");
 
 app.use(cors());
 // panggil router
-app.use(router)
+app.use(router);
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});

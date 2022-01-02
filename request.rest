@@ -1,0 +1,19 @@
+GET http://localhost:3001/
+
+###
+
+GET http://localhost:3001/61bff77ee9443724f8650f6e
+
+###
+
+POST http://localhost:3001/
+Content-Type: application/json
+
+{
+  "title" : "Didin",
+  "status" : "aktif"
+}
+
+###
+
+DELETE http://localhost:3001/61c001c9bebb7c81438c4aa8/delete/
